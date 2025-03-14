@@ -1,18 +1,58 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+li {
+  margin: 15px 0;
+  display: inline-block;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-family: 'Arial', sans-serif;
+  background-color: #3498db;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+li a:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+li a:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
